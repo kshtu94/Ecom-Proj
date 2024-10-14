@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +69,7 @@ TEMPLATES = [
                 'category.context_processors.menu_links',
                 # By setting this context_processor ,
                 # we can easily use  this menu_links anywhere we want in all the templates
+                'carts.context_processors.counter',
             ],
         },
     },
